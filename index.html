@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 6.Formulario y Tabla</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1></h1>
+    <form id="form">
+        <fieldset>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+
+            <div>
+                <label>Genero</label>
+                <label for="hombre">Hombre <input type="radio" name="genero" id="hombre" required
+                        value="Hombre"></label>
+                <label for="mujer">Mujer <input type="radio" name="genero" id="mujer" value="Mujer" required></label>
+            </div>
+
+            <div>
+                <label for="fechaNacimiento">Fecha Nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            </div>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+            </div>
+            <div>
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="e-mail" required>
+            </div>
+            <div id="submitDiv">
+                <button type="submit" id="submit">Ingresar Datos</button>
+                <input type="button" id="submit2" value="Excel" onclick="tableToExcel('table','nombre')">
+            </div>
+        </fieldset>
+    </form>
+    <div class="scroll">
+        <table id="table">
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Fecha Nacimiento</th>
+                <th>Telefono</th>
+                <th>E-mail</th>
+                <th>Borrar</th>
+            </thead>
+            <tbody id="cuerpoTabla">
+
+            </tbody>
+        </table>
+        </div>
+        <div id="alerta"></div>
+    </div>
+    <script src="conQuerySelectoryEventos.js" type="text/javascript"></script>
+
+</body>
+
+</html>
