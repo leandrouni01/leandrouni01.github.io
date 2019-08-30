@@ -16,10 +16,10 @@ formulario.onsubmit = function (e) {
     <td>${telefono}</td>
     <td>${eMail}</td>
     <td>
-        <button type="button" class="borrar">Borrar</button>
+        <button type="button" class="btn btn-danger">Borrar</button>
     </td>
     `;
-    fila.querySelector(".borrar").addEventListener("click", function () {
+    fila.querySelector(".btn-danger").addEventListener("click", function () {
         let fila = this.parentNode.parentNode;
         fila.parentNode.removeChild(fila);
     });
