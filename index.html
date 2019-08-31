@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 6.Formulario y Tabla</title>
+    <style>
+    #primary-container{
+        padding-top: 55px;
+    }
+    </style>
     <!--<link href="styles.css" rel="stylesheet">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,20 +18,16 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-            <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Murgo Leandro</a>
-                      </div>
-                      <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Tabla a excel</a></li>
-                        <li><a href="./Curriculum/CurriculumVitae.html">Curriculum</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
-                      </ul>
-                    </div>
-                  </nav>
+    <div class="container-fluid" id="primary-container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Murgo Leandro</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Tabla a excel</a></li>
+                    <li><a href="./Curriculum/Curriculum.html">Curriculum</a></li>
+                </ul>
+        </nav>
         <div class="jumbotron">
             <h1>Tabla a excel</h1>
         </div>
@@ -38,7 +39,8 @@
                         <div class="form-group row">
                             <label for="nombre" class="col-lg-2">Nombre</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" class="form-control" name="nombre" id="nombre" required>
+                                <input type="text" class="form-control" class="form-control" name="nombre" id="nombre"
+                                    required>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -49,26 +51,28 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-lg-2">Genero</label>
-                            <div class="col-lg-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="genero" id="hombre" required
-                                        value="Hombre">
-                                    <label class="form-check-label" for="hombre">Hombre</label>
+                            <div class="row">
+                                <label class="col-lg-2">Genero</label>
+                                <div class="col-lg-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="genero" id="hombre" required
+                                            value="Hombre">
+                                        <label class="form-check-label" for="hombre">Hombre</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="genero" id="mujer"
+                                            value="Mujer" required>
+                                        <label class="form-check-label" for="mujer">Mujer</label>
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="genero" id="mujer" value="Mujer"
-                                        required>
-                                    <label class="form-check-label" for="mujer">Mujer</label>
-                                </div>
-
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label class="col-lg-2" for="fechaNacimiento">Fecha Nacimiento</label>
                             <div class="col-lg-10">
-                                <input class="form-control" type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+                                <input class="form-control" type="date" name="fechaNacimiento" id="fechaNacimiento"
+                                    required>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -94,8 +98,7 @@
         <div class="row">
             <div class="col-lg-10"></div>
             <div class="col-lg-2">
-                <button type="button" class="btn btn-primary" id="submit2"
-                    onclick="tableToExcel('table','nombre')">
+                <button type="button" class="btn btn-primary" id="submit2" onclick="tableToExcel('table','nombre')">
                     Transformar tabla a Excel
                 </button>
             </div>

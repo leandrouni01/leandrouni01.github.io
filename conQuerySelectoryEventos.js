@@ -49,7 +49,18 @@ var tableToExcel = (function() {
         }
         window.location.href = uri + base64(format(template, ctx))
       }else{
-        document.getElementById("alerta").innerHTML= '<div class="alert alert-danger">Debe ingresar al menos un elemento en la tabla</div>'; 
+        document.getElementById("alerta").innerHTML= `
+        <div class="alert alert-success alert-dismissable">
+				 
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+					×
+				</button>
+				<h4>
+					Alerta!
+        </h4>
+        Estas intentando transformar una tabla vacia
+			</div>
+        `; 
       }
 
     }

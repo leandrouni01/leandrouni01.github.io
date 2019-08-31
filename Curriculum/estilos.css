@@ -1,51 +1,10 @@
 body{
-    background-image: url(hojas.jpg);
-    color: #00682E
+    background-image: url('hojas.jpg')
 }
-.container{
-    margin: 0px auto;
-    padding: 0px;
-    width: 80%;
-    background-color: #F1F3EE;
-}
-header{
-    text-align: center;
-}
-h1{
-    padding-top: 50px;
-    font-size: 3em;
-    margin: 0px;
-}
-h2{
-    padding-top: 15px;
-}
-main{
-    margin: 0px auto;
-    padding: 0px;
-    width: 80%;
-}
-img{
-    width: 250px;
-    height: 187.5px;
+#primary-container{
+    padding-top: 55px
 }
 
-figure{
-    float: left;
-    margin-left: 150px;
-    margin-right: 0px;
-}
-section{
-    clear: both;
-    border-style: double;
-    border-color: #235E3D;
-    border-radius: 20px;
-}
-section h3{
-    border: 2px solid #12D869;
-    margin-left: 10px;
-    width: fit-content;
-    border-radius: 10px;
-}
-article dl{
-    margin-left: 15px
+#title,#subtitle{
+    color: #ccc;
 }
