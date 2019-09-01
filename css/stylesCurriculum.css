@@ -1,0 +1,7 @@
+body{
+    background-image: url('../images/hojas.jpg')
+}
+
+#title,#subtitle{
+    color: #ccc;
+}

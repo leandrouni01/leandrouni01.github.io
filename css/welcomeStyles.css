@@ -1,0 +1,9 @@
+.fig-center{
+    margin: 0px auto;
+    width: 60%;
+}
+
+#primary-container{
+    background-image: url(../images/patronFondo.jpg);
+    background-attachment: fixed;
+}

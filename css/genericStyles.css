@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    #primary-container {
+        padding-top: 145px;
+    }
+}
+@media screen and (min-width: 767px){
+    #primary-container {
+        padding-top: 55px;
+    }
+}

@@ -1,0 +1,27 @@
+body{
+    background-image: url("../images/fondo_gravity_falls.jpg");
+    background-attachment: fixed;
+}
+
+.contenedor{
+    margin: 0px auto;
+    width: 75%;
+    background-color: #edddae;
+    padding-top: 5px;
+}
+table{
+    margin: 25px;
+    border: 5px solid #75543b;
+    border-collapse: collapse;
+}
+th{
+    border: 3px solid #392921;
+}
+td{
+    border: 2px solid #ae9c6b;
+}
+#cabecera img{
+    margin: 0px auto;
+    width: 50%;
+    height: 37.5%;
+}
